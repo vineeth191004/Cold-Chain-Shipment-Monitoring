@@ -1,0 +1,1296 @@
+[
+    {
+        "shipment_code": "SHP-100",
+        "sensor_stats": [
+            {
+                "sensor_code": "B10",
+                "mean": 3.64,
+                "min": 2.85,
+                "max": 4.08
+            },
+            {
+                "sensor_code": "G12",
+                "mean": 1.54,
+                "min": 0.03,
+                "max": 2.98
+            },
+            {
+                "sensor_code": "H200",
+                "mean": 45.25,
+                "min": 33.43,
+                "max": 56.0
+            },
+            {
+                "sensor_code": "S50",
+                "mean": 0.44,
+                "min": 0.0,
+                "max": 4.13
+            },
+            {
+                "sensor_code": "T100",
+                "mean": 4.85,
+                "min": 0.56,
+                "max": 8.81
+            },
+            {
+                "sensor_code": "TX5",
+                "mean": 5.05,
+                "min": 1.55,
+                "max": 8.64
+            }
+        ],
+        "violations_count": [
+            {
+                "sensor_code": "B10",
+                "count": 8
+            },
+            {
+                "sensor_code": "S50",
+                "count": 8
+            },
+            {
+                "sensor_code": "T100",
+                "count": 7
+            }
+        ],
+        "sensor_analysis": [
+            {
+                "sensor_code": "B10",
+                "sensor_name": "BatteryMonitor B-10",
+                "avg": 3.64,
+                "unit": "V",
+                "violations": 8,
+                "risk": "Medium"
+            },
+            {
+                "sensor_code": "G12",
+                "sensor_name": "GPS ColdTrack G-12",
+                "avg": 1.54,
+                "unit": "km",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "H200",
+                "sensor_name": "HumidSensor H-200",
+                "avg": 45.25,
+                "unit": "%",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "S50",
+                "sensor_name": "ShockLog S-50",
+                "avg": 0.44,
+                "unit": "g",
+                "violations": 8,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "T100",
+                "sensor_name": "ThermoProbe T-100",
+                "avg": 4.85,
+                "unit": "C",
+                "violations": 7,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "TX5",
+                "sensor_name": "TempTrack X5",
+                "avg": 5.05,
+                "unit": "C",
+                "violations": 0,
+                "risk": "Low"
+            }
+        ],
+        "critical_alerts": [
+            "ShockLog S-50",
+            "ThermoProbe T-100"
+        ],
+        "overall_risk_score": {
+            "score": 1,
+            "category": "High"
+        },
+        "violations_detail": [
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.264",
+                "ts": "2025-09-14 09:14:28"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.234",
+                "ts": "2025-09-14 09:39:28"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2395247726034615",
+                "ts": "2025-09-14 09:19:35"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2280989247961807",
+                "ts": "2025-09-14 09:31:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.8488086807479145",
+                "ts": "2025-09-14 09:36:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2404516638428196",
+                "ts": "2025-09-14 10:01:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2845514981244985",
+                "ts": "2025-09-14 09:53:05"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.934831218402093",
+                "ts": "2025-09-14 09:55:14"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 3.909",
+                "ts": "2025-09-14 09:34:28"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 4.134",
+                "ts": "2025-09-14 09:44:28"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 3.1435691997951474",
+                "ts": "2025-09-14 09:21:07"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.2004806656737976",
+                "ts": "2025-09-14 10:12:56"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 3.1020444757118737",
+                "ts": "2025-09-14 09:30:14"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.8154285773254295",
+                "ts": "2025-09-14 10:10:14"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 3.1170235514054525",
+                "ts": "2025-09-14 10:22:09"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.2211758002215145",
+                "ts": "2025-09-14 10:52:09"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.814",
+                "ts": "2025-09-14 09:14:28"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "T100 breach: 0.609",
+                "ts": "2025-09-14 09:54:28"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.39669362404166",
+                "ts": "2025-09-14 10:04:35"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.014643728513803",
+                "ts": "2025-09-14 09:31:07"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.116267884602095",
+                "ts": "2025-09-14 09:36:07"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "T100 breach: 0.8757410109595205",
+                "ts": "2025-09-14 10:05:14"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "T100 breach: 0.5615206870389731",
+                "ts": "2025-09-14 10:32:09"
+            }
+        ]
+    },
+    {
+        "shipment_code": "SHP-101",
+        "sensor_stats": [
+            {
+                "sensor_code": "B10",
+                "mean": 3.67,
+                "min": 2.91,
+                "max": 4.08
+            },
+            {
+                "sensor_code": "G12",
+                "mean": 1.48,
+                "min": 0.07,
+                "max": 2.98
+            },
+            {
+                "sensor_code": "H200",
+                "mean": 44.61,
+                "min": 34.69,
+                "max": 57.58
+            },
+            {
+                "sensor_code": "S50",
+                "mean": 0.26,
+                "min": 0.0,
+                "max": 2.7
+            },
+            {
+                "sensor_code": "T100",
+                "mean": 4.99,
+                "min": 0.4,
+                "max": 8.65
+            },
+            {
+                "sensor_code": "TX5",
+                "mean": 4.85,
+                "min": -1.88,
+                "max": 9.31
+            }
+        ],
+        "violations_count": [
+            {
+                "sensor_code": "B10",
+                "count": 8
+            },
+            {
+                "sensor_code": "S50",
+                "count": 2
+            },
+            {
+                "sensor_code": "T100",
+                "count": 5
+            },
+            {
+                "sensor_code": "TX5",
+                "count": 1
+            }
+        ],
+        "sensor_analysis": [
+            {
+                "sensor_code": "B10",
+                "sensor_name": "BatteryMonitor B-10",
+                "avg": 3.67,
+                "unit": "V",
+                "violations": 8,
+                "risk": "Medium"
+            },
+            {
+                "sensor_code": "G12",
+                "sensor_name": "GPS ColdTrack G-12",
+                "avg": 1.48,
+                "unit": "km",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "H200",
+                "sensor_name": "HumidSensor H-200",
+                "avg": 44.61,
+                "unit": "%",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "S50",
+                "sensor_name": "ShockLog S-50",
+                "avg": 0.26,
+                "unit": "g",
+                "violations": 2,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "T100",
+                "sensor_name": "ThermoProbe T-100",
+                "avg": 4.99,
+                "unit": "C",
+                "violations": 5,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "TX5",
+                "sensor_name": "TempTrack X5",
+                "avg": 4.85,
+                "unit": "C",
+                "violations": 1,
+                "risk": "Medium"
+            }
+        ],
+        "critical_alerts": [
+            "ShockLog S-50",
+            "ThermoProbe T-100"
+        ],
+        "overall_risk_score": {
+            "score": 1,
+            "category": "High"
+        },
+        "violations_detail": [
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.911129494044363",
+                "ts": "2025-09-14 09:19:35"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.231716591051076",
+                "ts": "2025-09-14 09:34:35"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2721277480997846",
+                "ts": "2025-09-14 09:33:05"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2282615198934996",
+                "ts": "2025-09-14 09:27:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2950234695653644",
+                "ts": "2025-09-14 09:45:14"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.0750688784529903",
+                "ts": "2025-09-14 09:33:36"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2895278370762324",
+                "ts": "2025-09-14 10:27:09"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.0481182985230886",
+                "ts": "2025-09-14 10:47:09"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.070271159722168",
+                "ts": "2025-09-14 09:53:05"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.7004096390060184",
+                "ts": "2025-09-14 10:17:56"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.651504302971514",
+                "ts": "2025-09-14 09:44:35"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 1.2491784209011705",
+                "ts": "2025-09-14 10:09:35"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 1.9967013283861776",
+                "ts": "2025-09-14 09:38:36"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "T100 breach: 0.4019156456757842",
+                "ts": "2025-09-14 10:27:09"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.634040424455849",
+                "ts": "2025-09-14 10:42:09"
+            },
+            {
+                "sensor_code": "TX5",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "TX5 breach: -1.875",
+                "ts": "2025-09-14 09:34:28"
+            }
+        ]
+    },
+    {
+        "shipment_code": "SHP-102",
+        "sensor_stats": [
+            {
+                "sensor_code": "B10",
+                "mean": 3.61,
+                "min": 2.81,
+                "max": 4.09
+            },
+            {
+                "sensor_code": "G12",
+                "mean": 1.34,
+                "min": 0.02,
+                "max": 2.93
+            },
+            {
+                "sensor_code": "H200",
+                "mean": 44.33,
+                "min": 26.04,
+                "max": 58.33
+            },
+            {
+                "sensor_code": "S50",
+                "mean": 0.34,
+                "min": 0.01,
+                "max": 4.67
+            },
+            {
+                "sensor_code": "T100",
+                "mean": 5.05,
+                "min": 0.19,
+                "max": 8.56
+            },
+            {
+                "sensor_code": "TX5",
+                "mean": 5.12,
+                "min": 1.32,
+                "max": 8.98
+            }
+        ],
+        "violations_count": [
+            {
+                "sensor_code": "B10",
+                "count": 12
+            },
+            {
+                "sensor_code": "H200",
+                "count": 1
+            },
+            {
+                "sensor_code": "S50",
+                "count": 4
+            },
+            {
+                "sensor_code": "T100",
+                "count": 3
+            }
+        ],
+        "sensor_analysis": [
+            {
+                "sensor_code": "B10",
+                "sensor_name": "BatteryMonitor B-10",
+                "avg": 3.61,
+                "unit": "V",
+                "violations": 12,
+                "risk": "Medium"
+            },
+            {
+                "sensor_code": "G12",
+                "sensor_name": "GPS ColdTrack G-12",
+                "avg": 1.34,
+                "unit": "km",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "H200",
+                "sensor_name": "HumidSensor H-200",
+                "avg": 44.33,
+                "unit": "%",
+                "violations": 1,
+                "risk": "Medium"
+            },
+            {
+                "sensor_code": "S50",
+                "sensor_name": "ShockLog S-50",
+                "avg": 0.34,
+                "unit": "g",
+                "violations": 4,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "T100",
+                "sensor_name": "ThermoProbe T-100",
+                "avg": 5.05,
+                "unit": "C",
+                "violations": 3,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "TX5",
+                "sensor_name": "TempTrack X5",
+                "avg": 5.12,
+                "unit": "C",
+                "violations": 0,
+                "risk": "Low"
+            }
+        ],
+        "critical_alerts": [
+            "ShockLog S-50",
+            "ThermoProbe T-100"
+        ],
+        "overall_risk_score": {
+            "score": 1,
+            "category": "High"
+        },
+        "violations_detail": [
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.219",
+                "ts": "2025-09-14 09:34:28"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.247",
+                "ts": "2025-09-14 10:04:28"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.23109689959785",
+                "ts": "2025-09-14 10:09:35"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.9400575250944483",
+                "ts": "2025-09-14 09:31:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.9048060136226703",
+                "ts": "2025-09-14 10:16:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2846605081425158",
+                "ts": "2025-09-14 10:02:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2063012182355757",
+                "ts": "2025-09-14 10:17:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2638600761366803",
+                "ts": "2025-09-14 09:40:14"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.213516320525356",
+                "ts": "2025-09-14 09:48:36"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.8123847544472538",
+                "ts": "2025-09-14 10:28:36"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.21582801081138",
+                "ts": "2025-09-14 10:27:09"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.807489135177453",
+                "ts": "2025-09-14 10:37:09"
+            },
+            {
+                "sensor_code": "H200",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "H200 breach: 26.041",
+                "ts": "2025-09-14 10:04:28"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 4.674",
+                "ts": "2025-09-14 09:19:28"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.2434899862494113",
+                "ts": "2025-09-14 10:03:36"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 4.446044753844262",
+                "ts": "2025-09-14 10:22:09"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.786195872058035",
+                "ts": "2025-09-14 10:57:09"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 1.5",
+                "ts": "2025-09-14 09:14:28"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.561",
+                "ts": "2025-09-14 09:24:28"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "T100 breach: 0.18655596152871867",
+                "ts": "2025-09-14 09:51:07"
+            }
+        ]
+    },
+    {
+        "shipment_code": "SHP-103",
+        "sensor_stats": [
+            {
+                "sensor_code": "B10",
+                "mean": 3.62,
+                "min": 2.88,
+                "max": 4.09
+            },
+            {
+                "sensor_code": "G12",
+                "mean": 1.36,
+                "min": 0.0,
+                "max": 2.99
+            },
+            {
+                "sensor_code": "H200",
+                "mean": 44.74,
+                "min": 33.89,
+                "max": 56.18
+            },
+            {
+                "sensor_code": "S50",
+                "mean": 0.36,
+                "min": 0.0,
+                "max": 4.64
+            },
+            {
+                "sensor_code": "T100",
+                "mean": 5.09,
+                "min": 2.6,
+                "max": 9.14
+            },
+            {
+                "sensor_code": "TX5",
+                "mean": 5.33,
+                "min": 2.13,
+                "max": 8.4
+            }
+        ],
+        "violations_count": [
+            {
+                "sensor_code": "B10",
+                "count": 11
+            },
+            {
+                "sensor_code": "S50",
+                "count": 4
+            },
+            {
+                "sensor_code": "T100",
+                "count": 3
+            }
+        ],
+        "sensor_analysis": [
+            {
+                "sensor_code": "B10",
+                "sensor_name": "BatteryMonitor B-10",
+                "avg": 3.62,
+                "unit": "V",
+                "violations": 11,
+                "risk": "Medium"
+            },
+            {
+                "sensor_code": "G12",
+                "sensor_name": "GPS ColdTrack G-12",
+                "avg": 1.36,
+                "unit": "km",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "H200",
+                "sensor_name": "HumidSensor H-200",
+                "avg": 44.74,
+                "unit": "%",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "S50",
+                "sensor_name": "ShockLog S-50",
+                "avg": 0.36,
+                "unit": "g",
+                "violations": 4,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "T100",
+                "sensor_name": "ThermoProbe T-100",
+                "avg": 5.09,
+                "unit": "C",
+                "violations": 3,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "TX5",
+                "sensor_name": "TempTrack X5",
+                "avg": 5.33,
+                "unit": "C",
+                "violations": 0,
+                "risk": "Low"
+            }
+        ],
+        "critical_alerts": [
+            "ShockLog S-50",
+            "ThermoProbe T-100"
+        ],
+        "overall_risk_score": {
+            "score": 1,
+            "category": "High"
+        },
+        "violations_detail": [
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.282",
+                "ts": "2025-09-14 09:29:28"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.253887961286323",
+                "ts": "2025-09-14 10:14:35"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2883624243802014",
+                "ts": "2025-09-14 09:41:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.8809199776520757",
+                "ts": "2025-09-14 09:46:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2967682603479624",
+                "ts": "2025-09-14 09:51:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2139892161174597",
+                "ts": "2025-09-14 10:06:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2957404686979834",
+                "ts": "2025-09-14 09:38:05"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.9665651218248144",
+                "ts": "2025-09-14 09:47:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.0247382812336268",
+                "ts": "2025-09-14 10:12:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2918172855150054",
+                "ts": "2025-09-14 09:50:14"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.214537523405723",
+                "ts": "2025-09-14 10:18:36"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 2.847319646588691",
+                "ts": "2025-09-14 09:39:35"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 4.298809301626633",
+                "ts": "2025-09-14 09:31:07"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 4.641835189820684",
+                "ts": "2025-09-14 09:43:05"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 4.324983275883049",
+                "ts": "2025-09-14 10:00:14"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.724427719833326",
+                "ts": "2025-09-14 09:53:05"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 8.847926212135901",
+                "ts": "2025-09-14 10:08:05"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "T100 breach: 9.14311871693007",
+                "ts": "2025-09-14 10:52:09"
+            }
+        ]
+    },
+    {
+        "shipment_code": "SHP-104",
+        "sensor_stats": [
+            {
+                "sensor_code": "B10",
+                "mean": 3.6,
+                "min": 2.89,
+                "max": 4.09
+            },
+            {
+                "sensor_code": "G12",
+                "mean": 1.36,
+                "min": 0.02,
+                "max": 7.49
+            },
+            {
+                "sensor_code": "H200",
+                "mean": 45.25,
+                "min": 28.3,
+                "max": 56.18
+            },
+            {
+                "sensor_code": "S50",
+                "mean": 0.31,
+                "min": 0.01,
+                "max": 4.77
+            },
+            {
+                "sensor_code": "T100",
+                "mean": 5.06,
+                "min": -0.08,
+                "max": 7.81
+            },
+            {
+                "sensor_code": "TX5",
+                "mean": 4.95,
+                "min": 0.84,
+                "max": 8.43
+            }
+        ],
+        "violations_count": [
+            {
+                "sensor_code": "B10",
+                "count": 19
+            },
+            {
+                "sensor_code": "H200",
+                "count": 1
+            },
+            {
+                "sensor_code": "S50",
+                "count": 2
+            },
+            {
+                "sensor_code": "T100",
+                "count": 2
+            }
+        ],
+        "sensor_analysis": [
+            {
+                "sensor_code": "B10",
+                "sensor_name": "BatteryMonitor B-10",
+                "avg": 3.6,
+                "unit": "V",
+                "violations": 19,
+                "risk": "Medium"
+            },
+            {
+                "sensor_code": "G12",
+                "sensor_name": "GPS ColdTrack G-12",
+                "avg": 1.36,
+                "unit": "km",
+                "violations": 0,
+                "risk": "Low"
+            },
+            {
+                "sensor_code": "H200",
+                "sensor_name": "HumidSensor H-200",
+                "avg": 45.25,
+                "unit": "%",
+                "violations": 1,
+                "risk": "Medium"
+            },
+            {
+                "sensor_code": "S50",
+                "sensor_name": "ShockLog S-50",
+                "avg": 0.31,
+                "unit": "g",
+                "violations": 2,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "T100",
+                "sensor_name": "ThermoProbe T-100",
+                "avg": 5.06,
+                "unit": "C",
+                "violations": 2,
+                "risk": "High"
+            },
+            {
+                "sensor_code": "TX5",
+                "sensor_name": "TempTrack X5",
+                "avg": 4.95,
+                "unit": "C",
+                "violations": 0,
+                "risk": "Low"
+            }
+        ],
+        "critical_alerts": [
+            "ShockLog S-50",
+            "ThermoProbe T-100"
+        ],
+        "overall_risk_score": {
+            "score": 1,
+            "category": "High"
+        },
+        "violations_detail": [
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.286",
+                "ts": "2025-09-14 09:34:28"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.082",
+                "ts": "2025-09-14 10:09:28"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.289715548770484",
+                "ts": "2025-09-14 09:44:35"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.20024403928932",
+                "ts": "2025-09-14 09:54:35"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2300537420584137",
+                "ts": "2025-09-14 09:21:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2081212333524163",
+                "ts": "2025-09-14 10:16:07"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.910500865716051",
+                "ts": "2025-09-14 10:03:05"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.293128104375947",
+                "ts": "2025-09-14 09:27:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.972179622690863",
+                "ts": "2025-09-14 09:47:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.21044432011297",
+                "ts": "2025-09-14 10:07:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.291314770528387",
+                "ts": "2025-09-14 10:12:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.9747384962997065",
+                "ts": "2025-09-14 10:17:56"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2610364787988853",
+                "ts": "2025-09-14 10:00:14"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.988317219267568",
+                "ts": "2025-09-14 10:15:14"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2293102438357564",
+                "ts": "2025-09-14 10:20:14"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.243455152022539",
+                "ts": "2025-09-14 09:33:36"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 2.8878102413149436",
+                "ts": "2025-09-14 09:43:36"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.2771452283687523",
+                "ts": "2025-09-14 09:53:36"
+            },
+            {
+                "sensor_code": "B10",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "B10 breach: 3.243046244159872",
+                "ts": "2025-09-14 10:27:09"
+            },
+            {
+                "sensor_code": "H200",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "H200 breach: 28.296",
+                "ts": "2025-09-14 09:24:28"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 4.773",
+                "ts": "2025-09-14 09:24:28"
+            },
+            {
+                "sensor_code": "S50",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "S50 breach: 3.934",
+                "ts": "2025-09-14 09:39:28"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "warning",
+                "message": "T100 breach: 1.475",
+                "ts": "2025-09-14 09:39:28"
+            },
+            {
+                "sensor_code": "T100",
+                "type": "threshold",
+                "severity": "critical",
+                "message": "T100 breach: -0.07626746679596552",
+                "ts": "2025-09-14 09:55:14"
+            }
+        ]
+    }
+]

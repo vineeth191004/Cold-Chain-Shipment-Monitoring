@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MediSafe Vaccine Shipment Monitoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            background: #f4f6f8; 
+            color: #333; 
+            margin: 0; 
+            padding: 0 20px 50px 20px;
+        }
+        h1 { 
+            text-align: center; 
+            color: #0d47a1; 
+            margin-top: 30px; 
+            font-size: 2.5em; 
+            text-shadow: 1px 1px 2px #bbb;
+        }
+        h2 { color: #1976d2; margin-top: 40px; }
+        h3 { color: #0d47a1; margin-bottom: 10px; }
+
+        .shipment-card {
+            background: #fff; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            padding: 20px; 
+            margin-bottom: 30px; 
+            transition: transform 0.2s;
+        }
+        .shipment-card:hover { transform: translateY(-5px); }
+
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-bottom: 20px; 
+        }
+        th, td {
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            text-align: left; 
+        }
+        th {
+            background-color: #2196f3; 
+            color: #fff; 
+            text-transform: uppercase; 
+            font-size: 0.95em;
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #e3f2fd; }
+
+        .critical { color: #d32f2f; font-weight: bold; }
+        .medium { color: #f9a825; font-weight: bold; }
+        .low { color: #388e3c; font-weight: bold; }
+
+        .alert-box {
+            background-color: #ffebee; 
+            border-left: 6px solid #d32f2f; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cold Chain Shipment Monitoring Dashboard</h1>
+
+    {% for shipment in shipments %}
+    <div class="shipment-card">
+        <h2>Shipment: {{ shipment.shipment_code }}</h2>
+
+        <h3>Sensor Stats</h3>
+        <table>
+            <tr>
+                <th>Sensor Code</th>
+                <th>Mean</th>
+                <th>Min</th>
+                <th>Max</th>
+            </tr>
+            {% for s in shipment.sensor_stats %}
+            <tr>
+                <td>{{ s.sensor_code }}</td>
+                <td>{{ s['mean'] }}</td>
+                <td>{{ s['min'] }}</td>
+                <td>{{ s['max'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h3>Violations Count</h3>
+        <table>
+            <tr>
+                <th>Sensor Code</th>
+                <th>Count</th>
+            </tr>
+            {% for v in shipment.violations_count %}
+            <tr>
+                <td>{{ v.sensor_code }}</td>
+                <td>{{ v.count }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h3>Sensor Analysis</h3>
+        <table>
+            <tr>
+                <th>Sensor</th>
+                <th>Average</th>
+                <th>Unit</th>
+                <th>Violations</th>
+                <th>Risk</th>
+            </tr>
+            {% for s in shipment.sensor_analysis %}
+            <tr>
+                <td>{{ s.sensor_name }} ({{ s.sensor_code }})</td>
+                <td>{{ s.avg }}</td>
+                <td>{{ s.unit }}</td>
+                <td>{{ s.violations }}</td>
+                <td class="{{ s.risk | lower }}">{{ s.risk }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% if shipment.critical_alerts %}
+        <div class="alert-box">
+            <strong>Critical Alerts:</strong> {{ shipment.critical_alerts | join(", ") }}
+        </div>
+        {% endif %}
+
+        <p><strong>Overall Shipment Risk:</strong> 
+            <span class="{{ shipment.overall_risk_score.category | lower }}">
+                {{ shipment.overall_risk_score.score }} ({{ shipment.overall_risk_score.category }})
+            </span>
+        </p>
+    </div>
+    {% endfor %}
+</body>
+</html>

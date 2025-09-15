@@ -1,6 +1,4 @@
 """
-MediSafe Monitoring System – Full Implementation (single-file)
-
 Features:
 - ER diagram + MySQL schema
 - Sample dataset generation (5 shipments, 10+ readings per sensor)
@@ -304,3 +302,4 @@ def main():
 
 if __name__=="__main__":
     main()
+
